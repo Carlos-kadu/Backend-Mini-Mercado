@@ -65,6 +65,18 @@ CORS_ALLOWED_ORIGINS = [
     "https://frontend-mini-mercado.vercel.app",
 ]
 
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://.*\.vercel\.app$",
+    r"^https://p01--backend--4wy7h7wyjvd7\.code\.run$",
+    r"^http://localhost:3000$",
+    r"^http://localhost:5173$",
+]
+
+CORS_ORIGIN_REGEX_WHITELIST = [
+    r"^https://.*\.vercel\.app$",
+    r"^https://.*\.code\.run$",
+]
+
 SWAGGER_SETTINGS = {
     "DEFAULT_API_URL": "https://p01--backend--4wy7h7wyjvd7.code.run/api/",
 }
