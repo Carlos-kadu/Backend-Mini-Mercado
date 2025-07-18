@@ -36,10 +36,6 @@ class AlimentacaoSerializer(serializers.ModelSerializer):
 
 class VestuarioSerializer(serializers.ModelSerializer):
     def validate(self, data):
-        if data.get('tamanho', 0) < 0:
-            raise serializers.ValidationError(
-                {'tamanho': 'O tamanho não pode ser negativo.'}
-            )
         if data.get('quant', 0) < 0:
             raise serializers.ValidationError(
                 {'quant': 'A quantidade não pode ser negativa.'}
