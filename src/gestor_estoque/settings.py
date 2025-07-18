@@ -60,6 +60,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://p01--backend--4wy7h7wyjvd7.code.run",
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://frontend-mini-mercado.vercel.app",
 ]
 
 SWAGGER_SETTINGS = {
