@@ -51,7 +51,7 @@ class Alimentacao(Produto):
         db_column='id_filial'
     )
     peso = models.FloatField()
-    vegetariano = models.BooleanField()
+    vegetariano = models.BooleanField(default=False)
 
     class Meta:
         db_table = 'alimentacao'
@@ -64,7 +64,7 @@ class Vestuario(Produto):
         related_name='vestuarios',
         db_column='id_filial'
     )
-    tamanho = models.IntegerField()
+    tamanho = models.CharField(max_length=20)
     genero = models.CharField(max_length=20)
 
     class Meta:
