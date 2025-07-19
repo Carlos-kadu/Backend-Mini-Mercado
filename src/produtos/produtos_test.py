@@ -40,7 +40,7 @@ def filial():
                 "preco": 30.0,
                 "quant": 10,
                 "descricao": "Algodão",
-                "tamanho": 42,
+                "tamanho": "GG",
                 "genero": "M",
             },
         ),
@@ -96,7 +96,7 @@ def test_get_produtos(endpoint, model, filial):
             preco=80.0,
             quant=2,
             descricao="Jeans",
-            tamanho=40,
+            tamanho="GG",
             genero="F",
             filial=filial,
         )
@@ -122,7 +122,7 @@ def test_get_produtos(endpoint, model, filial):
     "endpoint,model,field,value",
     [
         ("alimentacao-detail", Alimentacao, "preco", 12.0),
-        ("vestuario-detail", Vestuario, "tamanho", 44),
+        ("vestuario-detail", Vestuario, "tamanho", "GG"),
         (
             "utilidadesdomesticas-detail",
             UtilidadesDomesticas,
@@ -157,7 +157,7 @@ def test_update_produto(endpoint, model, field, value, filial):
             preco=40.0,
             quant=1,
             descricao="Jeans",
-            tamanho=38,
+            tamanho="GG",
             genero="M",
             filial=filial,
         )
@@ -226,7 +226,7 @@ def test_delete_produto(endpoint, model, filial):
             preco=60.0,
             quant=1,
             descricao="Jeans",
-            tamanho=36,
+            tamanho="GG",
             genero="F",
             filial=filial,
         )
@@ -294,7 +294,7 @@ def test_delete_produto(endpoint, model, filial):
                 "preco": 30.0,
                 "quant": -3,
                 "descricao": "Algodão",
-                "tamanho": 42,
+                "tamanho": "GG",
                 "genero": "M",
             },
             'quant'
@@ -303,22 +303,10 @@ def test_delete_produto(endpoint, model, filial):
             "vestuario-list",
             {
                 "nome": "Camiseta",
-                "preco": 30.0,
-                "quant": 3,
-                "descricao": "Algodão",
-                "tamanho": -42,
-                "genero": "M",
-            },
-            'tamanho'
-        ),
-        (
-            "vestuario-list",
-            {
-                "nome": "Camiseta",
                 "preco": -30.0,
                 "quant": 3,
                 "descricao": "Algodão",
-                "tamanho": 42,
+                "tamanho": "GG",
                 "genero": "M",
             },
             'preco'
