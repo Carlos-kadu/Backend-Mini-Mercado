@@ -53,3 +53,11 @@ A documentação da API estará disponível em: [http://localhost:8000/swagger/]
 - Documentação da API disponível em `/swagger/` após rodar o servidor.
 - [Diagrama de Classes UML (PDF)](docs/DIAGRAMA%20DE%20CLASSES%20UML%20-%20Mini%20mercado.pdf)
 - [Diagrama Físico do Banco (PNG)](docs/Diagrama%20de%20dados.png)
+
+
+## 🔗 Frontend
+- Repositório do frontend: [https://github.com/Carlos-kadu/Frontend-Mini-Mercado](https://github.com/Carlos-kadu/Frontend-Mini-Mercado)
+- Deploy: [https://frontend-mini-mercado.vercel.app](https://frontend-mini-mercado.vercel.app)
+
+## 🎨 Protótipo Figma
+- [Protótipo no Figma](https://www.figma.com/design/P7Iw6NzhkGvnL3Vu72kfgO/Mini-Mercado---TPPE?node-id=0-1&t=sjhqkpkcfMfer1Qw-1)
